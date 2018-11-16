@@ -10,7 +10,18 @@ import Foundation
 
 public class Example {
 
-    public static func doSomething() {
-        print("This is a framework")
+    private let key: String
+    public var delegate: RequestManagerDataSource?
+
+    private init(key: String) {
+        self.key = key
+    }
+
+    public static func initializeWithAPIKey(key: String) -> Example {
+        return Example(key: key)
+    }
+
+    public func loadUser(_ username: String) {
+        delegate?.loadUser(username)
     }
 }
