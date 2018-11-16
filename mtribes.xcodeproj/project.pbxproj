@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		2E1EC838219E466300FA39E3 /* mtribes.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E1EC836219E466300FA39E3 /* mtribes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E1EC83F219E482400FA39E3 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1EC83E219E482400FA39E3 /* Example.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2E1EC833219E466300FA39E3 /* mtribes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = mtribes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E1EC836219E466300FA39E3 /* mtribes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mtribes.h; sourceTree = "<group>"; };
 		2E1EC837219E466300FA39E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E1EC83E219E482400FA39E3 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				2E1EC836219E466300FA39E3 /* mtribes.h */,
 				2E1EC837219E466300FA39E3 /* Info.plist */,
+				2E1EC83E219E482400FA39E3 /* Example.swift */,
 			);
 			path = mtribes;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					2E1EC832219E466300FA39E3 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E1EC83F219E482400FA39E3 /* Example.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +266,7 @@
 		2E1EC83C219E466300FA39E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -279,6 +285,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.massive.mtribes;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -287,6 +294,7 @@
 		2E1EC83D219E466300FA39E3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
