@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.license = 'MIT'
   s.homepage = 'https://github.com/wangqingzhouleo/Mtribe'
   s.authors = { 'Leo Wang' => 'wangqingzhouleo@gmail.com' }
-  s.source = { :git => 'https://github.com/wangqingzhouleo/Mtribe.git' :tag => s.version.to_s }
+  s.source = { :git => 'https://github.com/wangqingzhouleo/Mtribe.git', :tag => s.version.to_s }
   s.swift_version = '4.2'
 
   s.tvos.deployment_target = '9.0'
