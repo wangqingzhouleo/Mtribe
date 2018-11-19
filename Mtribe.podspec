@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'Mtribe'
-  s.version = '1.0.4'
+  s.version = '1.0.8'
   s.summary = 'A testing framework'
   s.license = 'MIT'
   s.homepage = 'https://bitbucket.org/leo_wang_massive/mtribe'
